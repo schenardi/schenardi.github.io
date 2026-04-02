@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Suchmaschinen-Optimierung (SEO) -->
+    <title>Schenardi Consulting | Externer CTO & Geo-IT Spezialist Zürich</title>
+    <meta name="description" content="Schenardi Consulting bietet technologische Führung, Product Ownership und tiefes Geo-IT Knowhow für Unternehmen. Ihr Partner für digitale Strategie.">
+    <meta name="keywords" content="Schenardi Consulting, CTO as a Service, Product Owner, Geo-IT, GIS Spezialist, ArcGIS Enterprise, IT Architektur, Interim Tech Lead">
+    <meta name="author" content="Markus Schenardi">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph für Social Media (LinkedIn Vorschau) -->
+    <meta property="og:title" content="Schenardi Consulting | Tech & Geo-IT Excellence">
+    <meta property="og:description" content="Externe technische Führung und Geodaten-Expertise für agile Projekte.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.linkedin.com/in/markus-schenardi/">
+    <style>
+        :root {
+            --primary: #0052ffd1; 
+            --dark: #0f172a;    
+            --blue-soft: #f4f8ff; 
+            --border: #e2e8f0;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--white); color: var(--dark); line-height: 1.6; }
+
+        header { 
+            padding: 120px 20px 100px; 
+            text-align: center;
+            background: radial-gradient(circle at top right, #f0f7ff, #ffffff);
+        }
+        .hero h1 { font-size: 3.8rem; font-weight: 800; letter-spacing: -2px; color: var(--dark); margin-bottom: 15px; }
+        .hero p { font-size: 1.2rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+
+        .container { max-width: 1050px; margin: 0 auto; padding: 0 20px; }
+
+        .features { 
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 24px; margin-top: -50px; margin-bottom: 100px; 
+        }
+        .feature-card { 
+            background: var(--white); padding: 40px; border-radius: 24px; 
+            box-shadow: 0 20px 40px rgba(0, 82, 255, 0.06); text-align: center;
+            border: 1px solid var(--border);
+        }
+        .feature-card span { font-size: 3rem; display: block; margin-bottom: 15px; }
+        .feature-card h3 { font-size: 1.2rem; font-weight: 800; color: var(--dark); }
+
+        section { margin-bottom: 120px; }
+        h2 { font-size: 2.4rem; margin-bottom: 40px; text-align: center; font-weight: 800; color: var(--dark); }
+
+        .grid-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; }
+        .list-box { padding: 50px; border-radius: 32px; border: 1px solid var(--border); background: var(--white); }
+        .list-box h3 { color: var(--primary); margin-bottom: 25px; font-size: 1.6rem; font-weight: 800; }
+        ul { list-style: none; }
+        ul li { margin-bottom: 14px; padding-left: 28px; position: relative; color: #334155; font-weight: 500; }
+        ul li::before { content: ""; position: absolute; left: 0; top: 11px; width: 14px; height: 3px; background: var(--primary); border-radius: 10px; }
+
+        .ref-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .ref-item { padding: 50px; background: var(--blue-soft); border-radius: 24px; text-align: center; border: 1px solid transparent; transition: 0.3s; }
+        .ref-logo { height: 48px; margin-bottom: 25px; filter: grayscale(1); opacity: 0.7; }
+        .ref-item:hover { background: var(--white); border-color: var(--primary); box-shadow: 0 10px 30px rgba(0,82,255,0.05); }
+        .ref-item:hover .ref-logo { filter: grayscale(0); opacity: 1; }
+
+        .stack-container { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; padding: 50px; background: var(--blue-soft); border-radius: 32px; }
+        .stack-tag { display: inline-block; background: var(--white); color: var(--primary); padding: 8px 16px; border-radius: 10px; margin: 4px; font-size: 0.9rem; font-weight: 700; border: 1px solid var(--border); }
+        .highlight-project { background: var(--primary); color: white; padding: 40px; margin-top: 40px; border-radius: 32px; box-shadow: 0 20px 40px rgba(0, 82, 255, 0.15); }
+
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .benefit-block { padding: 40px; border-radius: 24px; border: 1px solid var(--border); background: var(--white); }
+        .benefit-block h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.4rem; font-weight: 800; }
+
+        .contact-section { 
+            background: var(--blue-soft); 
+            padding: 80px 40px; 
+            border-radius: 40px; 
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .contact-buttons { 
+            display: flex; 
+            gap: 20px; 
+            justify-content: center; 
+            margin-top: 30px; 
+            flex-wrap: wrap;
+        }
+        .btn { 
+            padding: 16px 32px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            transition: 0.3s;
+            font-size: 1.1rem;
+        }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: #0044d6; transform: translateY(-2px); }
+        .btn-outline { border: 2px solid var(--primary); color: var(--primary); }
+        .btn-outline:hover { background: var(--white); transform: translateY(-2px); }
+
+        .volunteer { text-align: center; padding: 40px 20px; color: #64748b; font-size: 1.1rem; margin-top: 40px; }
+        
+        /* FOOTER ANPASSUNGEN */
+        footer { padding: 60px; text-align: center; color: #94a3b8; font-weight: 600; font-size: 0.9rem; border-top: 1px solid var(--border); }
+        .privacy-hint { font-weight: 400; color: #cbd5e1; margin-top: 10px; font-size: 0.8rem; }
+
+        @media (max-width: 768px) { 
+            .hero h1 { font-size: 2.8rem; }
+            .ref-grid, .stack-container, .grid-list { grid-template-columns: 1fr; } 
+            .contact-buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Schenardi Consulting</h1>
+            <p>Strategy &bull; Product &bull; Geo-IT</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="features">
+            <div class="feature-card"><span>🚀</span><h3>Tech-Leadership</h3></div>
+            <div class="feature-card"><span>🌍</span><h3>Geo-IT Excellence</h3></div>
+            <div class="feature-card"><span>🎯</span><h3>Product Ownership</h3></div>
+        </div>
+
+        <section>
+            <h2>Leistungen</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.3rem; color: #334155;">
+                Ich unterstütze Unternehmen als <strong>externer CTO, Product Owner und Geo-IT Spezialist</strong>. Wenn technische Führung, klarer Produktfokus oder tiefes Geodaten-Knowhow gefragt sind, begleite ich Sie flexibel und unabhängig.
+            </div>
+        </section>
+
+        <section>
+            <div class="grid-list">
+                <div class="list-box">
+                    <h3>Mein Fokus</h3>
+                    <ul>
+						<li>Strategischer Austausch auf C-Level</li>
+                        <li>Technologische Führung & Architektur</li>
+                        <li>Product Ownership & Management</li>
+                        <li>Geo-IT / GIS: WebGIS & Datenmodelle</li>
+                        <li>Nutzerzentrierte, klare Lösungen</li>
+                    </ul>
+                </div>
+                <div class="list-box">
+                    <h3>Hier helfe ich</h3>
+                    <ul>
+                        <li>Interim CTO / Tech Lead Rollen</li>
+                        <li>Produktstrategie & Roadmaps</li>
+                        <li>Geo-IT Beratung & Architektur</li>
+                        <li>Teams aufbauen & weiterentwickeln</li>
+                        <li>Pragmatische Umsetzungsbegleitung</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Referenzen & Projekte</h2>
+            <div class="ref-grid">
+                <div class="ref-item">
+                    
+                    <h4>Stadt Luzern, Geoinformationszentrum</h4>
+                    <p>Strategische und operative Begleitung des Projekts GIS-Upgrade.</p>
+                </div>
+                <div class="ref-item">
+                    
+                    <h4>Energie Wasser Bern</h4>
+                    <p>Modernisierung der Netzplanung mit ArcGIS Enterprise und VertiGIS Studio.</p>
+                </div>
+				<div class="ref-item">
+                    
+                    <h4>IG Unihockey Zürich</h4>
+                    <p>Konzeption und Realisierung einer Geschäftsstelle für mehrere Vereine.</p>
+                </div>
+				<div class="ref-item">
+                    
+                    <h4>SOGI</h4>
+                    <p>Redesign und Neustrukturierung der Website (Projektleitung).</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Über mich</h2>
+            <div style="max-width: 850px; margin: 0 auto; font-size: 1.2rem; color: #1e293b;">
+                <p>Bedürfnisse verstehen und technologisch optimal umsetzen: Seit 2001 bewege ich mich an der Schnittstelle von IT und Geodaten. Ich verbinde technologisches Wissen mit langjähriger Erfahrung als Produktmanager und Projektleiter.</p>
+                <div class="highlight-project">
+                    <strong>💡 Projekt-Highlight:</strong> Digitale Stadtpläne auf Touchscreens in der <strong>Stadt Zürich</strong> – ein Projekt, das seit Jahren GIS in der Öffentlichkeit zugänglich macht.
+                </div>
+                <div class="stack-container">
+                    <div>
+                        <h4 style="margin-bottom:20px; color: var(--primary);">Wissensstack</h4>
+                        <span class="stack-tag">Strategie</span><span class="stack-tag">Beratung</span> <span class="stack-tag">Geschäftsleitung & Leadership</span> <span class="stack-tag">IT Architektur</span> <span class="stack-tag">Produktmanagement</span> <span class="stack-tag">Projektleitung</span> <span class="stack-tag">Künstliche Intelligenz</span> <span class="stack-tag">Infrastrukturmanagement (Utilities)</span>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom:20px; color: var(--primary);">Techstack</h4>
+                        <span class="stack-tag">ArcGIS Enterprise</span> <span class="stack-tag">VertiGIS Studio</span> <span class="stack-tag">GEONIS</span><span class="stack-tag">FME</span> <span class="stack-tag">Python</span> <span class="stack-tag">Azure</span> <span class="stack-tag">Open Source GIS</span><span class="stack-tag">Wordpress</span><span class="stack-tag">Atlassian</span>
+                    </div>
+                </div>
+            </div>
+			
+			<div class="contact-buttons">
+                <a href="https://www.linkedin.com/in/markus-schenardi/" target="_blank" class="btn btn-outline">LinkedIn Profil</a>
+
+            </div>
+										                
+        </section>
+
+        <section>
+            <h2>Warum Schenardi Consulting?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-block">
+                    <h3>Agil & Direkt</h3>
+                    <p>Als Einzelfirma biete ich volle Flexibilität ohne Agentur-Overhead. Ich bin sofort operativ einsatzbereit.</p>
+                </div>
+                <div class="benefit-block">
+                    <h3>Unabhängig</h3>
+                    <p>Über 20 Jahre Expertise garantieren eine objektive Beratung – herstellerneutral und pragmatisch.</p>
+                </div>
+                <div class="benefit-block">
+                    <h3>Ganzheitlich</h3>
+                    <p>Ich verbinde IT-Architektur, Produktmanagement und Geodaten für Lösungen, die Benutzer wirklich lieben.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Lassen Sie uns zusammenarbeiten</h2>
+            <p>Haben Sie ein Projekt, das technische Führung oder Geo-IT Expertise benötigt?</p>
+            <div class="contact-buttons">
+                <a href="mailto:schenardiconsulting@outlook.com" class="btn btn-primary">E-Mail schreiben</a>
+
+            </div>
+        </section>
+
+
+        <div class="volunteer">
+            Als Vereinsmensch unterstütze ich Organisationen auch ehrenamtlich bei ihrer (technologischen) Weiterentwicklung.</br>
+			Zum Beispiel bei der SOGI Gruppe Technologie für die Publikation des <a href="https://gistrends.ch" target="_blank">GIS Trendradar</a>.</br>
+			Oder als Präsident des Unihockeyvereins <a href="https://lioness.ch" target="_blank">Floorball Zurich Lioness</a>.
+
+            
+			
+        </div>
+		
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Schenardi Consulting, Zürich</p>
+        <p class="privacy-hint">Diese Seite nutzt keine Cookies und speichert keinerlei personenbezogene Daten.</p>
+    </footer>
+
+</body>
+</html>
